@@ -4,9 +4,9 @@ type ParseReturn = Result<(TokenType, String, Option<String>), ParseError>;
 
 #[derive(PartialEq, Debug)]
 pub struct Token {
-    pub(crate) token_type: TokenType,
-    pub(crate) content: String,
-    pub(crate) link: Option<String>
+    pub token_type: TokenType,
+    pub content: String,
+    pub link: Option<String>
 }
 
 #[derive(PartialEq, Debug)]
